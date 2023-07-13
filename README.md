@@ -5,5 +5,5 @@
 ## How to Install
 ### Clone the repo.
 ### Run the npm install command.
-### Then you just need to run the npm run dev command and join Ring.
+### Then you just need to run the npm run dev command and join the Ring.
 
