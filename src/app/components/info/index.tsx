@@ -1,41 +1,26 @@
 import React from 'react'
-import { Container } from '../banner/style'
-import styled from "styled-components";
 import Image from 'next/image';
-import Logo from '../../../assets/logo.webp'
-
-const KingInfo = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 10px;
-    row-gap: 40px;
-    padding: 20px;
-
-    img {
-        width: 100%;
-        max-width: 600px;
-        height: 150px;
-    }
-
-    iframe {
-        width: 100%;
-        max-width: 1060px;
-        height: 600px;
-    }
-`
+import KingImage1 from '../../../assets/king3.gif'
+import KingImage2 from '../../../assets/king4.gif'
+import { InfosWrapper, FirstRow, RowsText, SecondRow } from './style'
 
 export default function Info() {
     return (
-        <Container>
-            <KingInfo>
+        <InfosWrapper>
+            <FirstRow>
                 <Image 
-                    src={Logo}
-                    alt='king2'
+                    src={KingImage1}
+                    alt='kingimage1'
                 />
-                <iframe src="https://www.youtube.com/embed/rTZhyVpmvxA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-            </KingInfo>
-        </Container>
+                <RowsText>King is a prominent character in the Tekken fighting game series, created by the Japanese company Bandai Namco Entertainment. The character has appeared in every main installment of the Tekken series since the first game's release in 1994. However, it's important to note that Tekken is an ongoing franchise, and the information provided here is accurate up until September 2021.</RowsText>
+            </FirstRow>
+            <SecondRow>
+            <Image 
+                src={KingImage2}
+                alt='kingimage2'
+            />
+            <RowsText>The character of King is known for his imposing appearance, strength, and acrobatic wrestling techniques. He has a muscular build, and his fighting style primarily revolves around powerful throws, grapples, and strikes. King's moveset incorporates various wrestling moves inspired by real-life professional wrestling and lucha libre styles, making him a unique and visually exciting character to play.</RowsText>
+            </SecondRow>
+        </InfosWrapper>
     )
 }

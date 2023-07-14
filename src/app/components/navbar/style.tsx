@@ -5,26 +5,28 @@ export const NavbarWrapper = styled.div`
     position: relative;
     height: 0px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     column-gap: 80px;
     width: 100%;
-    padding: 40px 0px 0px 35px;
+    padding: 30px 35px 0px 35px;
     max-width: 1520px;
     margin: 0 auto;
-    z-index: 2;
+    z-index: 15;
     cursor: pointer;
 `
 
 export const NavLink = styled.a`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    font-size: 18px;
-    color: #f2f2f2;
     cursor: pointer;
-    opacity: .5;
-    transition: all ease 1s;
 
-    &:hover {
-        opacity: 1;
+    img {
+        @media screen and (max-width: 992px){
+            max-width: 100px;
+            height: 70px;
+        }
     }
 `
