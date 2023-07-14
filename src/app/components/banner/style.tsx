@@ -30,7 +30,7 @@ export const BannerWrapper = styled.div`
     position: relative;
 
     h1 {
-        font-family: 'wild';
+        font-family: 'wild' !important;
         font-size: 250px;
         font-weight: 300;
         color: red;
