@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'wild';
-  src: url('../assets/wildfont.ttf');
+  src: url("../assets/wildfont.ttf");
 }
 
 * {
