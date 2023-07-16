@@ -44,6 +44,10 @@ export const BuyNow = styled.div`
         height: 450px;
         animation: zoom 2.5s ease infinite;
 
+        @media screen and (max-width: 900px){
+            padding: 20px;
+        }
+
         @keyframes zoom {
             0% {
                 transform: scale(1);

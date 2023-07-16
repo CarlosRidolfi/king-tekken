@@ -24,10 +24,12 @@ export const BannerWrapper = styled.div`
     justify-content: center;
     align-items: center;
     row-gap: 30px;
-    max-width: 900px;
+    max-width: 100%;
+    height: 100vh;
     z-index: 9;
-    margin: 0 auto;
+    margin-inline: auto;
     position: relative;
+    margin-top: 130px;
 
     h1 {
         font-family: 'wild' !important;
@@ -39,18 +41,30 @@ export const BannerWrapper = styled.div`
     }
 
     #king {
-        margin-top: 100px;
-        object-fit: cover;
         width: 100%;
-        height: 1000px;
+        max-width: 1000px;
+        object-fit: cover;
+
+        @media screen and (max-height: 900px){
+            max-width: 800px;
+        }
+
+        @media screen and (min-height: 1300px){
+            max-width: 1500px;
+        }
     }
 
     #arrowdown {
         position: absolute;
         margin-top: 600px;
+        margin-bottom: 100px;
         margin-left: 80px;
         cursor: pointer;
         animation: bounce 1s ease infinite;
+
+        @media screen and (max-height: 900px){
+            margin-top: 400px;
+        }
 
         @keyframes bounce {
             0% {

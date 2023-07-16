@@ -14,6 +14,10 @@ export const InfosWrapper = styled.div`
     -webkit-box-shadow: -1px 11px 12px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 11px 12px -5px rgba(0,0,0,0.75);
     box-shadow: -1px 11px 12px -5px rgba(0,0,0,0.75);
+
+    @media screen and (max-width: 900px){
+        padding: 30px;
+    }
 `
 
 export const FirstRow = styled.div`
